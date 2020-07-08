@@ -1,41 +1,199 @@
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url(../assets\fonts\HelveticaNeueCyr-Thin.ttf) format("truetype"), url(../assets\fonts\HelveticaNeueCyr-Thin.eot) format("eot"), url(../assets\fonts\HelveticaNeueCyr-Thin.woff) format("woff");
+  src: url(../assets/fonts/HelveticaNeueCyr-Thin.ttf) format("truetype"), url(../assets/fonts/HelveticaNeueCyr-Thin.eot) format("eot"), url(../assets/fonts/HelveticaNeueCyr-Thin.woff) format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url(../assets\fonts\HelveticaNeueCyr-UltraLight.ttf) format("truetype"), url(../assets\fonts\HelveticaNeueCyr-UltraLight.eot) format("eot"), url(../assets\fonts\HelveticaNeueCyr-UltraLight.woff) format("woff");
+  src: url(../assets/fonts/HelveticaNeueCyr-UltraLight.ttf) format("truetype"), url(../assets/fonts/HelveticaNeueCyr-UltraLight.eot) format("eot"), url(../assets/fonts/HelveticaNeueCyr-UltraLight.woff) format("woff");
   font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url(../assets\fonts\HelveticaNeueCyr-Light.ttf) format("truetype"), url(../assets\fonts\HelveticaNeueCyr-Light.eot) format("eot"), url(../assets\fonts\HelveticaNeueCyr-Light.woff) format("woff");
+  src: url(../assets/fonts/HelveticaNeueCyr-Light.ttf) format("truetype"), url(../assets/fonts/HelveticaNeueCyr-Light.eot) format("eot"), url(../assets/fonts/HelveticaNeueCyr-Light.woff) format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
-  src: url(../assets\fonts\HelveticaNeueCyr-Medium.ttf) format("truetype"), url(../assets\fonts\HelveticaNeueCyr-Medium.eot) format("eot"), url(../assets\fonts\HelveticaNeueCyr-Medium.woff) format("woff");
+  src: url(../assets/fonts/HelveticaNeueCyr-Medium.ttf) format("truetype"), url(../assets/fonts/HelveticaNeueCyr-Medium.eot) format("eot"), url(../assets/fonts/HelveticaNeueCyr-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url(../assets\fonts\TrajanPro3Regular.ttf) format("truetype"), url(../assets\fonts\TrajanPro3Regular.eot) format("eot"), url(../assets\fonts\TrajanPro3Regular.woff) format("woff"), url(../assets\fonts\TrajanPro3Regular.woff2) format("woff2");
+  font-family: "TrajanPro3";
+  src: url(../assets/fonts/TrajanPro3Regular.ttf) format("truetype"), url(../assets/fonts/TrajanPro3Regular.eot) format("eot"), url(../assets/fonts/TrajanPro3Regular.woff) format("woff"), url(../assets/fonts/TrajanPro3Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TrajanPro3";
-  src: url(../assets\fonts\TrajanPro3Bold.ttf) format("truetype"), url(../assets\fonts\TrajanPro3Bold.eot) format("eot"), url(../assets\fonts\TrajanPro3Bold.woff) format("woff"), url(../assets\fonts\TrajanPro3Bold.woff2) format("woff2");
+  src: url(../assets/fonts/TrajanPro3Bold.ttf) format("truetype"), url(../assets/fonts/TrajanPro3Bold.eot) format("eot"), url(../assets/fonts/TrajanPro3Bold.woff) format("woff"), url(../assets/fonts/TrajanPro3Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background: #424242 url(/assets/images/header-bg.png) no-repeat center center/cover;
+  height: 1080px;
+}
+
+.header-nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 45px;
+  list-style: none;
+}
+
+.header-nav__link {
+  font-family: TrajanPro3;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.27em;
+  text-transform: uppercase;
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+.header-text {
+  margin-top: 320px;
+}
+
+.header-text__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-family: TrajanPro3;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 160px;
+  line-height: 233px;
+  letter-spacing: 0.36em;
+  color: #F0F0F0;
+  text-shadow: 1px 2px 1px rgba(255, 168, 0, 0.28);
+}
+
+.header-text__paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 42px;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.225em;
+  color: #F0F0F0;
+}
+
+.header-rotated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 74px;
+}
+
+.header-rotated__since {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.27em;
+  color: #F0F0F0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header-rotated__date {
+  font-family: TrajanPro3;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.27em;
+  color: #F0F0F0;
+  margin-top: calc( 145px - 74px);
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1900px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
