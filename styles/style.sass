@@ -78,8 +78,7 @@ $dark: #3e3e3e
             list-style: none
         &__link
             font-family: TrajanPro3
-            font-style: normal
-            font-weight: normal
+            font-weight: 400
             font-size: 20px
             line-height: 29px
             letter-spacing: 0.27em
@@ -93,8 +92,7 @@ $dark: #3e3e3e
             justify-content: center
             text-transform: uppercase
             font-family: TrajanPro3
-            font-style: normal
-            font-weight: normal
+            font-weight: 400
             font-size: 160px
             line-height: 233px
             letter-spacing: 0.36em
@@ -105,8 +103,7 @@ $dark: #3e3e3e
             justify-content: center
             margin-top: 42px
             font-family: HelveticaNeueCyr
-            font-style: normal
-            font-weight: normal
+            font-weight: 400
             font-size: 24px
             line-height: 24px
             letter-spacing: 0.225em
@@ -114,10 +111,9 @@ $dark: #3e3e3e
     &-rotated
         display: flex
         justify-content: space-between
-        margin-top: 74px
+        margin-top: 91px
         &__since
             font-family: HelveticaNeueCyr
-            font-style: normal
             font-weight: 300
             font-size: 22px
             line-height: 22px
@@ -126,43 +122,94 @@ $dark: #3e3e3e
             transform: rotate(-90deg)
         &__date
             font-family: TrajanPro3
-            font-style: normal
-            font-weight: normal
+            font-weight: 400
             font-size: 20px
             line-height: 29px
             text-align: center
             letter-spacing: 0.27em
             color: $bright
-            margin-top: calc( 145px - 74px )
+            margin-top: calc( 162px - 91px )
 
 .description
     background: url('/assets/images/description-bg.jpg') no-repeat center/ 856px 730px
     background-position-x: 90%
-    background-position-y: 30%
+    background-position-y: 55%
+    &__icon
+        display: flex
+        margin: 71px auto 0 auto
     &-bottom
         padding-bottom: 400px
     &__title
-        margin-top: 208px
+        margin-top: 98px
         display: flex
         justify-content: center
         font-family: TrajanPro3
-        font-style: normal
-        font-weight: normal
+        font-weight: 400
         font-size: 100px
         line-height: 146px
         letter-spacing: 0.36em
         margin-bottom: 160px
+        text-transform: uppercase
         color: $dark
     &__paragraph
         font-family: HelveticaNeueCyr
-        font-style: normal
-        font-weight: 100
+        font-weight: 300
         font-size: 24px
         line-height: 24px
         letter-spacing: 0.32em
         color: $dark
         max-width: 610px
         margin-left: 227px
+
+.reasons
+    background: #5990D4 url('/assets/images/reasons-bg.jpg') no-repeat center center / cover
+    height: 688px
+    &-icon
+        &__img
+            display: flex
+            padding-top: 45px
+            margin: 0 auto 55px auto
+    &-text
+        &__title
+            display: flex
+            justify-content: center
+            font-family: TrajanPro3
+            font-weight: 400
+            font-size: 100px
+            line-height: 146px
+            letter-spacing: 0.36em
+            color: $bright
+            text-transform: uppercase
+            margin-bottom: 75px
+    &-column
+        display: flex  
+        &__title
+            font-family: HelveticaNeueCyr
+            font-weight: 400
+            font-size: 24px
+            line-height: 24px
+            text-align: center
+            letter-spacing: 0.27em
+            color: $bright
+            text-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25)
+            margin-bottom: 50px
+        &__paragraph
+            font-family: HelveticaNeueCyr
+            font-weight: 300
+            font-size: 24px
+            line-height: 24px
+            text-align: center
+            letter-spacing: 0.27em
+            color: #FFFFFF
+
+.col
+    display: flex
+    flex-direction: column
+    flex: 0 0 33%
+    max-width: 33%
+    
+
+
 
 //Global styles
 .container
